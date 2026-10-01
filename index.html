@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo Harry Potter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>⚡ Harry Potter ⚡</h1>
+
+        <div class="casa">
+            <h2>Escolha sua Casa</h2>
+            <div class="botoes">
+                <button onclick="selecionarCasa('Grifinória')" class="grif">Grifinória</button>
+                <button onclick="selecionarCasa('Sonserina')" class="sons">Sonserina</button>
+                <button onclick="selecionarCasa('Corvinal')" class="corv">Corvinal</button>
+                <button onclick="selecionarCasa('Lufa-Lufa')" class="lufa">Lufa-Lufa</button>
+            </div>
+            <p id="resultado">A casa aparecerá aqui...</p>
+        </div>
+
+        <div class="feitiço">
+            <h2>Feitiço</h2>
+            <input type="text" id="entrada" placeholder="Digite o feitiço">
+            <button onclick="lancarFeitico()">Lançar!</button>
+            <p id="mensagem"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo Harry Potter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="menu">
+        <a href="index.html" class="ativo">Início</a>
+        <a href="casas.html">Casas</a>
+        <a href="personagens.html">Personagens</a>
+        <a href="feiticos.html">Feitiços</a>
+    </nav>
+
+    <main class="conteudo">
+        <h1>⚡ Bem-vindo ao Mundo Harry Potter ⚡</h1>
+        
+        <div class="imagem-principal">
+            <img src="https://images.unsplash.com/photo-1598153346810-860daa814c4b?w=800" alt="Castelo de Hogwarts">
+        </div>
+
+        <p class="intro">
+            Mergulhe no universo mágico criado por J.K. Rowling. Conheça Hogwarts, suas casas, 
+            os personagens inesquecíveis e os feitiços que marcaram gerações!
+        </p>
+
+        <div class="destaques">
+            <a href="casas.html" class="card">
+                <h3>🏰 Casas de Hogwarts</h3>
+                <p>Descubra a qual casa você pertence</p>
+            </a>
+            <a href="personagens.html" class="card">
+                <h3>👦 Personagens</h3>
+                <p>Heróis, vilões e amigos leais</p>
+            </a>
+            <a href="feiticos.html" class="card">
+                <h3>✨ Feitiços</h3>
+                <p>Magias que mudam tudo</p>
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        <p>✨ Site feito com magia | Mundo Harry Potter ✨</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casas de Hogwarts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="menu">
+        <a href="index.html">Início</a>
+        <a href="casas.html" class="ativo">Casas</a>
+        <a href="personagens.html">Personagens</a>
+        <a href="feiticos.html">Feitiços</a>
+    </nav>
+
+    <main class="conteudo">
+        <h1>🏰 As Quatro Casas de Hogwarts</h1>
+
+        <div class="casa-card grif">
+            <h2>Grifinória</h2>
+            <img src="https://www.pngwing.com/pt/search?q=grifinória" alt="Grifinória">
+            <p><strong>Fundador:</strong> Godrico Gryffindor</p>
+            <p><strong>Valores:</strong> Coragem, nobreza, bravura e determinação</p>
+            <p><strong>Animal:</strong> Leão</p>
+            <p><strong>Cores:</strong> Vermelho e Ouro</p>
+        </div>
+
+        <div class="casa-card sons">
+            <h2>Sonserina</h2>
+            <img src="https://www.pngwing.com/pt/search?q=sonserina" alt="Sonserina">
+            <p><strong>Fundador:</strong> Salazar Slytherin</p>
+            <p><strong>Valores:</strong> Astúcia, ambição, liderança e engenhosidade</p>
+            <p><strong>Animal:</strong> Cobra</p>
+            <p><strong>Cores:</strong> Verde e Prata</p>
+        </div>
+
+        <div class="casa-card corv">
+            <h2>Corvinal</h2>
+            <img src="https://www.pngwing.com/pt/search?q=corvinal" alt="Corvinal">
+            <p><strong>Fundadora:</strong> Rowena Ravenclaw</p>
+            <p><strong>Valores:</strong> Sabedoria, inteligência, criatividade e aprendizado</p>
+            <p><strong>Animal:</strong> Águia</p>
+            <p><strong>Cores:</strong> Azul e Bronze</p>
+        </div>
+
+        <div class="casa-card lufa">
+            <h2>Lufa-Lufa</h2>
+            <img src="https://www.pngwing.com/pt/search?q=lufa-lufa" alt="Lufa-Lufa">
+            <p><strong>Fundadora:</strong> Helga Hufflepuff</p>
+            <p><strong>Valores:</strong> Lealdade, bondade, paciência e trabalho duro</p>
+            <p><strong>Animal:</strong> Texugo</p>
+            <p><strong>Cores:</strong> Amarelo e Preto</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>✨ Site feito com magia | Mundo Harry Potter ✨</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
