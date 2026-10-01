@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: serif;
+}
+
+body {
+    background: linear-gradient(to right, #1a1a2e, #16213e);
+    color: #f5f5dc;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #ffd700;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.casa, .feitiço {
+    background: rgba(0,0,0,0.4);
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    border: 2px solid #ffd700;
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: #ffec8b;
+}
+
+.botoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.2s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.grif { background: #7f0909; color: #ffd700; }
+.sons { background: #004d1a; color: #c0c0c0; }
+.corv { background: #002a72; color: #946b2d; }
+.lufa { background: #ecb939; color: #000000; }
+
+#resultado {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+input {
+    padding: 10px;
+    width: 250px;
+    border-radius: 6px;
+    border: none;
+    margin-right: 8px;
+    font-size: 1rem;
+}
